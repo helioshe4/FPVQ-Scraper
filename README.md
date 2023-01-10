@@ -1,12 +1,10 @@
-# Project Name
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+# FPVQ Scraper
+> Webscraper using BeautifulSoup, requests, selenium, and pandas.  Takes results from every national-level speed skating competition in Canada and returns skaters personal bests for each distance.
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Usage](#usage)
 * [Project Status](#project-status)
@@ -17,62 +15,64 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+In speed skating, skaters are ranked based on their fastest 500m and 1500m times.  However, at a national competition, there can be more than 100 skaters, skating 
+each distance 4 or 5 times.  As a result, it can be hard to keep track of skaters' best times, and makes it difficult to maintain an accurate ranking of skaters.  
+This program intends to automate the process of ranking skaters by parsing through the entire competition and returning their best times.  I undertook this project 
+to help skaters better prepare to qualify for competitions.  Many competitions only take the top x amount of skaters, and this ranking program would help coaches 
+determine the time improvements needed for their skaters to qualify.
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- Python 3.1
 
 
 ## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+- Allows users to rank per distance to avoid confusion
+- Exports all data to an Excel file formatted properly
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
+pip install bs4  
+pip install selenium  
+download chromedriver for selenium  
 
 ## Usage
 How does one go about using it?
 Provide various use cases and code examples here.
 
-`write-your-code-here`
+Follow the prompts provided by program.  
+'**>**' Denotes user input  
+Enter the distance you would like to rank:  
+\> **1500** *note you will only input the numbers, you do not add 'm' after*  
 
+Enter 'a, b, c' for the level of competition you would like the results for   
+a) National   
+b) Elite   
+c) Collegial  
+\> **b**   
+
+Enter 'a, b, c' for the competition you would like the results for   
+a) Canadian Champs   
+b) Canadian Juniors   
+c) Invitational   
+\> **c**  
+
+The results are about to be saved in a file, please name the file:  
+\> **Top 1500m results from Invitational competition**  
+
+And a file should be downloaded called *Top 1500m results from Invitational competition.xlsx* where you can find the results.  
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _complete_.
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
-
+Allow program to retake user input if the input does not meet the guidelines.  
+Output Men's and Women's results separately.
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+This project was inspired by Adam Law's Spreadsheets.
+
+## Contact
+Helios He: h22he@uwaterloo.ca  
+Sharang Goel: s4goel@uwaterloo.ca
