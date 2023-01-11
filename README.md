@@ -37,8 +37,7 @@ pip install selenium
 download chromedriver for selenium - https://chromedriver.chromium.org/downloads
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+A usage case is provided below
 
 Follow the prompts provided by program.  
 '**>**' Denotes user input  
