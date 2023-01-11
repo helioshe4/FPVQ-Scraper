@@ -34,7 +34,7 @@ determine the time improvements needed for their skaters to qualify.
 ## Setup
 pip install bs4  
 pip install selenium  
-download chromedriver for selenium  
+download chromedriver for selenium - https://chromedriver.chromium.org/downloads
 
 ## Usage
 How does one go about using it?
