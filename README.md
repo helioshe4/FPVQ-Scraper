@@ -70,7 +70,7 @@ Allow program to retake user input if the input does not meet the guidelines.
 Output Men's and Women's results separately.
 
 ## Acknowledgements
-This project was inspired by Adam Law's Spreadsheets.
+This project was inspired by AJL's Spreadsheets.
 
 ## Contact
 Helios He: h22he@uwaterloo.ca  
